@@ -1,0 +1,620 @@
+*s<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:03 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel='icon' href='demo/img/icon_3.png' type='image/x-icon'/ >
+	
+		<!--icon files-->
+	 <link rel="stylesheet" href="css/flat2/flat2.css" />
+		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
+		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
+		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
+		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
+
+		<!-- Vendor styles -->
+		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+		<link rel="stylesheet" href="css/flaticon-font/flaticon.css">
+		<link rel="stylesheet" href="css/flaticon-font/flaticon.css">
+	
+        <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
+        <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+        <link rel="stylesheet" href="vendors/dropzone/dropzone.css">
+        <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+        <link rel="stylesheet" href="vendors/trumbowyg/ui/trumbowyg.min.css">
+       
+        <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
+        <link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
+        <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="css/app.min.css">
+		<link rel="stylesheet" href="css/dropify2.css">
+    </head>
+
+    <body data-ma-theme="green">
+        <main class="main">
+            <div class="page-loader">
+                <div class="page-loader__spinner">
+                    <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+				<span class="powerd-container">
+					<img src="demo/img/logo-files/NBk.png">
+					<strong>POWERED BY TRIVE</strong>
+				</span>
+            </div>
+
+            <header class="header">
+                <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
+                    <div class="navigation-trigger__inner">
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                    </div>
+                </div>
+
+                <div class="header__logo hidden-sm-down">
+					<a href="index.html"><img class="the-logo" src="demo/img/logo-files/fav-icon.png"></a>
+					<h1>
+						<a href="index.html" class="mb-3">OptiRev</a>
+						<p class="mb-0 text-white font-weight-light text-capitalize font-12px">Finance Dashboard</p>
+					</h1>
+				</div>
+
+                <form class="search">
+                    <div class="search__inner">
+                        <input type="text" class="search__text" placeholder="Search site">
+                        <i class="zmdi zmdi-search search__helper" data-ma-action="search-close"></i>
+                    </div>
+                </form>
+				
+				<ul class="top-nav d-none">
+                    <li class="hidden-xl-up"><a href="#" data-ma-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
+					<li   class="dropdown">
+						<a href="#" data-toggle="dropdown" data-toggle="tooltip" data-original-title="Create Accounts" class="px-4 py-3" ><strong>Create</strong></a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-menu--block">
+                            <div class="listview listview--hover">
+                                <div class="listview__header">
+                                    Create an Account
+                                </div>
+
+                                <div class="listview__scroll scrollbar-inner">
+                                    <a href="new-parent.html" class="listview__item">
+                                        <img src="demo/img/profile-pics/1.jpg" class="listview__img" alt="">
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Parents (Gurdian) Account</div>
+                                            <p>Create a new parent's account</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="new-student.html" class="listview__item">
+                                        <img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Student's Account (Blinker)</div>
+                                            <p>Create a student's Accountl</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="new-shop.html" class="listview__item">
+                                        <img src="demo/img/profile-pics/3.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Tack Shop</div>
+                                            <p>Create Tack Shop account</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="p-1"></div>
+                            </div>
+                        </div>
+						
+					</li>
+					<li data-toggle="tooltip" data-original-title="Notifications" class="dropdown top-nav__notifications">
+                        <a href="#" data-toggle="dropdown"  class="top-nav__notify" >
+                            <i class="zmdi zmdi-notifications"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu--block">
+                            <div class="listview listview--hover">
+                                <div class="listview__header">
+                                    Notifications
+
+                                    <div class="actions">
+                                        <a href="#" class="actions__item zmdi zmdi-check-all" data-ma-action="notifications-clear"></a>
+                                    </div>
+                                </div>
+
+                                <div class="listview__scroll scrollbar-inner">
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/1.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">David Belle</div>
+                                            <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Jonathan Morris</div>
+                                            <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/3.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Fredric Mitchell Jr.</div>
+                                            <p>Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/4.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Glenn Jecobs</div>
+                                            <p>Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/5.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Bill Phillips</div>
+                                            <p>Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/1.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">David Belle</div>
+                                            <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Jonathan Morris</div>
+                                            <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/3.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Fredric Mitchell Jr.</div>
+                                            <p>Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="p-1"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" >
+                        <a href="new-parent.html" data-ma-action="aside-open" data-ma-target=".chat" data-toggle="tooltip" data-original-title="Associate Blinker Requests" class="top-nav__notify">
+                            <i class="zmdi zmdi-accounts-add"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                
+            </header>
+            <aside class="sidebar">
+                <div class="scrollbar-inner">
+                    <div class="user">
+                        <div class="user__info" data-toggle="dropdown">
+                           <div class="avatar-char bg-warning text-black mr-3 font-weight-bold">JM</div>
+                            <div>
+                                <div class="user__name">John Mwakili</div>
+                                <div class="user__email">john@gmail.com</div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="my-profile.html">View Profile</a>
+                            <a class="dropdown-item d-none" href="#">Settings</a>
+                            <a class="dropdown-item" href="landing-page.html">Logout</a>
+                        </div>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="navigation__active"><a href="index.html"><i class="flaticon-graphic"></i>Dashboard</a></li>
+						
+						 <li class="navigation__sub">
+                            <a href="#"><i class="flaticon-report"></i>summary reports</a>
+                            <ul>
+                                <li><a href="daily-summary.html">Daily report</a></li>
+                                <li><a href="monthly-summary.html">Monthly Report</a></li>
+                            </ul>
+                        </li>
+						
+						 <li class="navigation__sub">
+                            <a href="#"><i class="flaticon-paper "></i>Detailed report</a>
+                            <ul>
+                                <li><a href="detailed-daily.html">Daily report</a></li>
+                                <li><a href="detailed-monthly.html">Monthly report</a></li>
+                            </ul>
+                        </li>
+						 <li class="navigation__active"><a href="targets.html"><i class="pe-7s-target"></i>Targets</a></li>
+						 <li class="navigation__active"><a href="change-pass.html"><i class="flaticon-password"></i>Change password</a></li>
+                         <li class="navigation__active mt-4"><a href="landing-page.html"><i class="zmdi zmdi-power"></i>Logout</a></li>
+                    </ul>
+                </div>
+            </aside>
+			<div class="row bg-black">
+				<div class="col-12">
+					<h2>sfdfsdf</h2>
+				</div>
+			</div>
+            <section class="content custom-table-container">
+				<!--new financial year targets-->
+			<div class="modal" id="target-upload" tabindex="-1" role="dialog">
+			  <div class="modal-dialog  modal-dialog-centered" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h3 class="modal-title">Upload Targets Document</h3>
+					  
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body pt-0">
+                      <hr>
+                      <p class="text-danger bg-danger-light p-3"><span>Make sure the document you are about to upload conforms with the target's document set structure to avoid any errors during upload.</span></p>
+                      <a href="" class="text-info"> Download Target document template <i class="ti-download ml-1"></i></a>
+					  	
+					 	<div class="col-12 p-0 request-container animated fadeIn pt-3">
+							
+							 <form class="drop-section-container cursor-pointer p-3">
+								 <div class="form-group pb-3 px-0 pb-2 m-0">
+										<label for="inputGroupSelect04" class="text-capitalize font-weight-bold text-danger"><h5>Enter financial Year</h5></label>
+										<input type="text" class="form-control fy-text" placeholder="Eg 2020/2021" pattern="[0-9]{4}[/]{1}[0-9]{4}" title="Use the following pattern eg 2018/2019" autofocus aria-label="Use the following pattern eg 2018/2019">
+									  </div>
+								 
+								<input type="file"  name="file" id="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  class="dropify " data-show-loader="true" />
+								
+								<div class="form-group pt-3 px-0 m-0 ">
+									<button class="btn btn-primary text-capitalize w-100 text-center btn-lg"><i class="zmdi zmdi-upload mr-3"></i>Create Target</button>
+								</div>
+							</form>
+					  	</div>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+			<!--new targets-->
+				<!-- edit collectable revenue-->
+				<div class="modal fade" id="edit-revenue" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Exclude revenue source from colletable target</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						  <p>Check a revenue stream you would like to be excluded from the list of collectable revenue</p>
+							<div class="listview rev-listview">
+                            <div class="listview__item">
+                                <div class="checkbox listview__checkbox">
+                                    <input type="checkbox" id="listview-1">
+                                    <label for="listview-1" class="checkbox__label"></label>
+                                </div>
+                                <div class="listview__content">
+                                    <p>Stream Name</p>
+                                </div>
+                            </div>
+
+                            <div class="listview__item">
+                                <div class="checkbox listview__checkbox">
+                                    <input type="checkbox" id="listview-2">
+                                    <label for="listview-2" class="checkbox__label"></label>
+                                </div>
+
+                                <div class="listview__content">
+                                    <p>Revenue source name</p>
+                                </div>
+                            </div>
+
+                            <div class="listview__item">
+                                <div class="checkbox listview__checkbox">
+                                    <input type="checkbox" id="listview-3">
+                                    <label for="listview-3" class="checkbox__label"></label>
+                                </div>
+
+                                <div class="listview__content">
+                                    <p>Revenue source name</p>
+                                </div>
+                            </div>
+
+                            <div class="listview__item">
+                                <div class="checkbox listview__checkbox">
+                                    <input type="checkbox" id="listview-4">
+                                    <label for="listview-4" class="checkbox__label"></label>
+                                </div>
+
+                                <div class="listview__content">
+                                    <p>Revenue source name</p>
+                                </div>
+                            </div>
+
+                            <div class="listview__item">
+                                <div class="checkbox listview__checkbox">
+                                    <input type="checkbox" id="listview-5">
+                                    <label for="listview-5" class="checkbox__label"></label>
+                                </div>
+
+                                <div class="listview__content">
+                                    <p>Revenue source name</p>
+                                </div>
+                            </div>
+                        </div>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Exclude</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+<!--				edit collectable revenue-->
+			
+				
+                <header class="content__title px-0 border-0">
+				 	<div class="row">
+						<div class="col-md-8 col-sm-12">
+							<span class="rev-title-container">
+							 <h1 class="text-capitalize stream_name m-0">Revenue Targets 2019/2020</h1>
+							</span>
+							<div class="">
+								<ol class="breadcrumb border-0">
+									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+									<li class="breadcrumb-item"><a href="#">Revenue Targets</a></li>
+									<li class="breadcrumb-item active">Financial year 2019/2020</li>
+								</ol>
+							</div>
+						</div>
+						
+						<div class="col-md-4 col-sm-12">
+							<div class="actions">
+							<div class="dropdown actions__item w-100">
+								<span data-toggle="dropdown" class="w-300px text-blue"><span class="font-12 ">Select Financial Year</span> <i class="zmdi zmdi-more-vert"></i> </span>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a href="#" class="dropdown-item">2018/2019</a>
+									<a href="#" class="dropdown-item">2019/2020</a>
+									<a href="#" class="dropdown-item">2020/2021</a>
+									<a href="#" class="dropdown-item" data-toggle="modal" data-target="#target-upload">Create New</a>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				
+				<div class="row">
+					<div class="col-12 p-0">
+						<div class="card table-custom-bg">
+							
+							
+							<div class="card-body">
+								<div class="row">
+									<div class="col-12 pb-2 buttons-containment">
+                                        <button class="btn btn-primary  p-3 btn-2layers"  data-toggle="modal" data-target="#target-upload"><i class="ti-plus"></i><div class="btn-txt"><div><strong class="text-uppercase">Upload</strong></div> New Financial year targets</div></button>
+                                          <span class="mx-3">    <strong>- OR -</strong>   </span>
+                                         <span class="btn btn-secondary p-3 btn-2layers"><i class="ti-download"></i><div class="btn-txt"><div><strong class="text-uppercase">Download</strong></div>Target document template</div></span>
+									</div>
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-hover table-custom spacing8" id="data-table">
+										<thead>
+											<tr> 
+												<th>Revenue stream</th>
+												<th>Jul-2019</th>
+												<th>Aug-2019</th>
+												<th>Sep-2019</th>
+												<th>Oct-2019</th>
+												<th>Nov-2019</th>
+												<th>Dec-2019</th>
+												<th>Jan-2020</th>
+												<th>Mar-2020</th>
+												<th>Apr-2020</th>
+												<th>May-2020</th>
+												<th>Jun-2020</th>
+												<th>Total</th>
+											</tr>
+										</thead>
+										<tfoot class="dark-footer">
+											<tr class="text-uppercase"> 
+												<th><strong>Sub Totals</strong></th>												
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>240,000,000</th>
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+												<td>Revenue stream Name</td>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>240,000,000</th>
+											</tr>
+											
+											<tr>
+												<td>Revenue stream Name</td>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>20,000,000</th>
+												<th>240,000,000</th>
+											</tr>
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <footer class="footer hidden-xs-down">
+                    <p>Powered by RevenueSure</p>
+                </footer>
+            </section>
+        </main>
+
+        <!-- Older IE warning message -->
+            <!--[if IE]>
+                <div class="ie-warning">
+                    <h1>Warning!!</h1>
+                    <p>You are using an outdated version of Internet Explorer, please upgrade to any of the following web browsers to access this website.</p>
+
+                    <div class="ie-warning__downloads">
+                        <a href="http://www.google.com/chrome">
+                            <img src="img/browsers/chrome.png" alt="">
+                        </a>
+
+                        <a href="https://www.mozilla.org/en-US/firefox/new">
+                            <img src="img/browsers/firefox.png" alt="">
+                        </a>
+
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                        </a>
+
+                        <a href="https://support.apple.com/downloads/safari">
+                            <img src="img/browsers/safari.png" alt="">
+                        </a>
+
+                        <a href="https://www.microsoft.com/en-us/windows/microsoft-edge">
+                            <img src="img/browsers/edge.png" alt="">
+                        </a>
+
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                        </a>
+                    </div>
+                    <p>Sorry for the inconvenience!</p>
+                </div>
+            <![endif]-->
+
+        <!-- Javascript -->
+        <!-- Vendors -->
+        <script src="vendors/jquery/jquery.min.js"></script>
+        <script src="vendors/popper.js/popper.min.js"></script>
+        <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+        <script src="vendors/flot/jquery.flot.js"></script>
+        <script src="vendors/flot/jquery.flot.resize.js"></script>
+        <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+        <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
+        <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+        <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+        <script src="vendors/salvattore/salvattore.min.js"></script>
+        <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
+        <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+		
+		 <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
+        <script src="vendors/select2/js/select2.full.min.js"></script>
+        <script src="vendors/dropzone/dropzone.min.js"></script>
+        <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/nouislider/nouislider.min.js"></script>
+        <script src="vendors/trumbowyg/trumbowyg.min.js"></script>
+        <script src="vendors/flatpickr/flatpickr.min.js"></script>
+        <script src="vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="vendors/jquery-text-counter/textcounter.min.js"></script>
+        <script src="vendors/autosize/autosize.min.js"></script>
+        <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+		
+		
+        <!-- Vendors: Data tables -->
+        <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+        <script src="vendors/jszip/jszip.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
+
+        <!-- Charts and maps-->
+        <script src="demo/js/flot-charts/curved-line.js"></script>
+        <script src="demo/js/flot-charts/dynamic.js"></script>
+        <script src="demo/js/flot-charts/line.js"></script>
+        <script src="demo/js/flot-charts/chart-tooltips.js"></script>
+        <script src="demo/js/other-charts.js"></script>
+        <script src="demo/js/jqvmap.js"></script>
+		
+		<!--high chart-->
+		
+		<script src="vendors/highcharts/highchart.js"></script>
+		<script src="vendors/highcharts/data.js"></script>
+		<script src="vendors/highcharts/drilldown.js"></script>
+		<script src="vendors/highcharts/exporting.js"></script>
+		<script src="vendors/highcharts/export-data.js"></script>
+		<script src="vendors/highcharts/accesibility.js"></script>
+		
+		<script src="js/highcharts/highcharts-more.js"></script>
+		<!--owl corousel-->
+		<script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
+		<!-- App functions and actions -->
+		<script src="js/wow.js"></script>
+        <script src="js/app.min.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/dropify2.js"></script>
+		<script>
+			$('.dropify').dropify();
+		</script>
+    </body>
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:03 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel='icon' href='demo/img/icon_3.png' type='image/x-icon'/ >
+	<title>NCCG Finance Dashboard</title>
+
+		<!-- Vendor styles -->
+		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+		<link rel="stylesheet" href="css/flaticon-font/flaticon.css">
+
+        <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
+        <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+        <link rel="stylesheet" href="vendors/dropzone/dropzone.css">
+        <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+        <link rel="stylesheet" href="vendors/trumbowyg/ui/trumbowyg.min.css">
+        <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
+        <link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
+        <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="css/app.min.css">
+	
+    </head>
+
+    <body data-ma-theme="green">
+
+			<div class="content--full map-main-container">
+					<div class="col-12">
+						<header class="content__title px-0 border-0">
+				 	<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<span class="rev-title-container">
+							 <h1 class="text-capitalize stream_name m-0">Revenue collections Dashboard</h1>
+							</span>
+							<div class="">
+								<ol class="breadcrumb border-0">
+									<li class="breadcrumb-item active">Home</li>
+								
+								</ol>
+								
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12 text-right text-white"><small>Date last updated <span>22 June 2020, 10:00 EAT</span></small></div>
+					</div>
+				</header>
+					</div>
+					<div class="pb-4">
+						<div class="col-12">
+							<h4 class="text-white text-light d-none">Revenue Collection By Subcounty</h4>
+							<div id="the-map-container-drilldown">
+							</div>
+<!--							control buttons-->
+							<div class="row map-buttons d-flex">
+									<span class="map-date p-3 text-white ml-3">30 Jun 2020</span>
+								<div class="col">
+									<button id="today" disabled="true" class="active"><span></span>Today: 7,895,897</button>
+									 <button id="this-week"><span></span>This Week: 15,237,895,897</button>
+									 <button id="this-month"><span></span>June 2020: 21,237,895,897</button>
+									 <button id="financial-year"><span></span>FY 19/20: 452,237,895,897</button>
+								</div>
+							</div>
+<!--							control buttons-->
+						</div>
+					</div>
+			</div>
+
+        </main>
+
+        <!-- Javascript -->
+        <!-- Vendors -->
+        <script src="vendors/jquery/jquery.min.js"></script>
+        <script src="vendors/popper.js/popper.min.js"></script>
+        <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+        <script src="vendors/flot/jquery.flot.js"></script>
+        <script src="vendors/flot/jquery.flot.resize.js"></script>
+        <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+        <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
+        <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+        <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+        <script src="vendors/salvattore/salvattore.min.js"></script>
+        <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
+        <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+		
+		 <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
+        <script src="vendors/select2/js/select2.full.min.js"></script>
+        <script src="vendors/dropzone/dropzone.min.js"></script>
+        <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/nouislider/nouislider.min.js"></script>
+        <script src="vendors/trumbowyg/trumbowyg.min.js"></script>
+        <script src="vendors/flatpickr/flatpickr.min.js"></script>
+        <script src="vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="vendors/jquery-text-counter/textcounter.min.js"></script>
+        <script src="vendors/autosize/autosize.min.js"></script>
+        <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+        <!-- Charts and maps-->
+        <script src="demo/js/flot-charts/curved-line.js"></script>
+        <script src="demo/js/flot-charts/dynamic.js"></script>
+        <script src="demo/js/flot-charts/line.js"></script>
+        <script src="demo/js/flot-charts/chart-tooltips.js"></script>
+        <script src="demo/js/other-charts.js"></script>
+        <script src="demo/js/jqvmap.js"></script>
+		
+		<!--high chart-->
+		<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+		<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+		<script src="vendors/highcharts/highchart.js"></script>
+		<script src="vendors/highcharts/data.js"></script>
+		<script src="vendors/highcharts/drilldown.js"></script>
+		<script src="vendors/highcharts/exporting.js"></script>
+		<script src="vendors/highcharts/export-data.js"></script>
+		<script src="vendors/highcharts/accesibility.js"></script>
+		<script src="js/highcharts/bullet.js"></script>
+		
+		<script src="js/highcharts/highcharts-more.js"></script>
+		<script src="js/highcharts/theme1.js"></script>
+		<!--owl corousel-->
+		<script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
+
+
+        <!-- App functions and actions -->
+     	<script src="js/wow.js"></script>
+        <script src="js/app.min.js"></script>
+        <script src="js/main.js"></script>
+		
+        <script src="js/chart-data/revenue-targets.js"></script>
+        <script src="js/chart-data/revenue-streams.js"></script>
+		 <script src="js/chart-data/revenue-by-bank.js"></script>
+        <script src="js/chart-data/revenue-collected.js"></script>
+        <script src="js/chart-data/perfomance.js"></script>
+
+        <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+        <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+        <script src="https://code.highcharts.com/mapdata/custom/world-continents.js"></script>
+        <script src="https://code.highcharts.com/mapdata/countries/gb/gb-all.js"></script>
+        <script src="https://code.highcharts.com/mapdata/custom/europe.js"></script>
+		<!--map scripts-->
+		
+		<script src="js/chart-data/drilldown-map-data.js"></script>
+		
+       
+		
+		
+		
+    </body>
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
+</html>

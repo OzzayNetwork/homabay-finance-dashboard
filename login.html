@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.spellbit.com/html/apposh/preview/index01-particle.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Feb 2020 15:06:38 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='icon' href='demo/img/icon_3.png' type='image/x-icon'/ >
+    <title>Login</title>
+
+    <!-- ==================Start Css Link===================== -->
+    <!-- font awesome icon -->
+    <link href="../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/vendors/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
+    
+    <!-- fav icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/all-img/fav.jpg">
+    <!-- flatiocn css -->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!-- plugins css link -->
+    <link rel="stylesheet" href="css/landing-assets/css/plugins.css">
+    <!-- app css -->
+    <link rel="stylesheet" href="css/landing-assets/css/landing-login.css">
+	<!--	input 100 styling-->
+	 <link rel="stylesheet" href="css/landing-assets/css/input100.css">
+    <!-- ==================End Css Link===================== -->
+
+
+    <!--[if lt IE 9]>
+<script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="scrollup2">
+
+    <!-- 
+    site header start
+ -->
+
+    <header class="site-header" id="home">
+        <nav class="navbar navbar-expand-lg main-menu homepage2 fixed-top">
+            <div class="container-fluid custom-container">
+                <a href="#!" class="navbar-brand"><img src="demo/img/logo-files/logo-white.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 
+    banner area start
+ -->
+    <section class="bannerarea home-page-2">
+        <div id="particles-js"></div>
+        <!-- end particle effects  -->
+        <div class="fluid-container">
+            <div class="row bn-height align-items-center m-0 p-0">
+				<div id="particles-js"></div>
+				<div class="col-6 col-md-7 col-sm-12  p-0 m-0 hidden-sm">
+					<div class="login-bg">
+						<div class="banner-content fx">
+                        <h2 class="animation text-white" data-animation="fadeInUp" data-animation-delay="0.6s"><strong>Welcome Back</strong></h2>
+                        <div class="animation" data-animation="fadeInDown" data-animation-delay="0.6s">
+                            <h2 class="text-white"><span>Sign In To continue</span></h2>
+                        </div>
+                    </div>
+					</div>
+				</div>
+				<div class="col-6 col-md-5 col-sm-12  pl-0 bg-green">
+					<div class="login-form-container w-100 animation" data-animation="flipIn" data-animation-delay="0.4s">
+						<form>
+							<h2 class="login100-form-title animation mb-2" data-animation="fadeInUp" data-animation-delay="0.6s">Sign In</h2>
+							<p class="animation mb-5 pb-3" data-animation="fadeInDown" data-animation-delay="0.6s">Key in your credentials bellow to continue</p>
+							<div class="wrap-input100 validate-input animation" data-animation="bounceInRight" data-animation-delay="0.6s" data-validate = "Valid email is required: ex@abc.xyz">
+								<span class="label-input100 animation" data-animation="fadeInRight" data-animation-delay="0.8s">Email</span>
+								<input class="input100 animation" data-animation="bounceInRight" data-animation-delay="1.0s" type="text" name="email" placeholder="Email address...">
+								<span class="focus-input100 animation" data-animation="fadeInRight" data-animation-delay="1.2s"></span>
+							</div>
+							
+							<div class="wrap-input100 validate-input animation" data-animation="bounceInRight" data-animation-delay="0.8s" data-validate = "Password is required">
+								<span class="label-input100 animation" data-animation="bounceInRight" data-animation-delay="1.4s">Password</span>
+								<input class="input100 animation" data-animation="bounceInRight" data-animation-delay="1.6s" type="password" name="pass" placeholder="*************">
+								<span class="focus-input100"></span>
+							</div>
+							<button type="submit" class="btn btn-primary animation" data-animation="bounceInRight" data-animation-delay="1.8s">Sign In</button>
+							<p class="animation" data-animation="bounceInRight" data-animation-delay="2.0s"><a href="">Forgot Password?</a></p>
+						</form>
+					</div>
+				</div>
+                
+                
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- map api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMjWSDG4QO9RnoYOsLOKITmRLbkg6B5TM"></script>
+    <!-- plugin js scripts -->
+    <script src="css/landing-assets/js/plugins.js"></script>
+    <!-- app js -->
+    <script src="css/landing-assets/js/landing-login.js"></script>
+	
+	<!--	input 100 js-->
+	 <script src="css/landing-assets/js/input100.js"></script>
+    <script>
+        var myCenter = new google.maps.LatLng(23.8294748, 90.3845342);
+
+        function initialize() {
+            var mapProp = {
+                center: myCenter,
+                scrollwheel: false,
+                zoom: 4,
+                zoomControl: true,
+                mapTypeControl: true,
+                streetViewControl: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [{
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#e9e9e9"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#f5f5f5"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 29
+                            },
+                            {
+                                "weight": 0.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 18
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#f5f5f5"
+                            },
+                            {
+                                "lightness": 21
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#f5f8fd"
+                            },
+                            {
+                                "lightness": 21
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                                "saturation": 36
+                            },
+                            {
+                                "color": "#333333"
+                            },
+                            {
+                                "lightness": 40
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.icon",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#f2f2f2"
+                            },
+                            {
+                                "lightness": 19
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 17
+                            },
+                            {
+                                "weight": 1.2
+                            }
+                        ]
+                    }
+                ]
+            };
+
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                animation: google.maps.Animation.DROP,
+                icon: 'assets/images/all-img/mapi2.gif'
+            });
+            marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+        setTimeout(function() {
+            particlesJS("particles-js", {
+
+
+                "particles": {
+                    "number": {
+                        "value": 120,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#4CAF50"
+                    },
+                    "shape": {
+                        "type": "polygon",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.18017060304327614,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 255.80432187492372,
+                            "size_min": 0.1,
+                            "sync": true
+                        }
+                    },
+                    "line_linked": {
+                        "enable": false,
+                        "distance": 80.17060304327615,
+                        "color": "#4CAF50",
+                        "opacity": 0.09620472365193136,
+                        "width": 0.32068241217310456
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "bottom",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 0,
+                            "rotateY": 400.8530152163807
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "bubble"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 0.5
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 4,
+                            "duration": 0.3,
+                            "opacity": 1,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        }, 1000);
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from demo.spellbit.com/html/apposh/preview/index01-particle.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Feb 2020 15:06:38 GMT -->
+</html>

@@ -13590,7 +13590,7 @@ ul.jqtree-tree ul.jqtree_common {
 	content: "";
 	top: 0;
 	left: 0;
-	background:linear-gradient(rgb(0, 67, 29), rgba(1, 56, 25, 0.89));
+	background:linear-gradient(#0045a1, #0374d254);
 	z-index: -1;
 	
 }

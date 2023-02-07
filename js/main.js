@@ -270,5 +270,71 @@ $(document).ready(function(){
 	$('.close-map-key').on('click', function(){
   $('.map-card').addClass('d-none');
   });
+//   traversing through add faces next
+  $('#multi-plate .next-side').on('click',function(error){
+  
+	  //stores the index of the last child
+	  var NumOfChildren=$('.faces-container.scrollbar-inner .plate-slides').last().index();
+	  
+	  //goes through every face on the multiple plate
+	  $('.faces-container .plate-slides').each(function(index) {
+		  var theIndex=$(this).index();
+  
+		  var hasDnone=$(this).hasClass( "d-none" ).toString();
+  
+		  // alert(theIndex);
+		  // alert(hasDnone);
+  
+		  if(hasDnone=="false"){
+			  if(theIndex==NumOfChildren){
+			  
+				  $(this).addClass('d-none');				
+				  $('.faces-container.scrollbar-inner .plate-slides').eq(0).removeClass('d-none');
+				  $('.faces-counter-container .thePosition').text('1');
+			  }
+			  else{
+				  $(this).addClass('d-none');
+				  $(this).next().removeClass('d-none');
+				  $('.faces-counter-container .thePosition').text(theIndex+2);
+			  }
+			  
+			  return false;
+		  }
+		  
+		});
+  
+  });
+  
+  //using prev
+  $('#multi-plate .prev-side').on('click', function(error){
+	  var NumOfChildren=$('.faces-container.scrollbar-inner .plate-slides').last().index();
+	  
+	  $('.faces-container .plate-slides').each(function(index){
+  
+		  var theIndex=$(this).index();
+  
+		  var hasDnone=$(this).hasClass( "d-none" ).toString();
+  
+		  
+		  var hasDnone=$(this).hasClass( "d-none" ).toString();
+  
+		  if(hasDnone=="false"){
+			  if(theIndex==0){
+			  
+				  $(this).addClass('d-none');				
+				  $('.faces-container.scrollbar-inner .plate-slides').eq(NumOfChildren).removeClass('d-none');
+				  $('.faces-counter-container .thePosition').text(NumOfChildren+1);
+			  }
+			  else{
+				  $(this).addClass('d-none');
+				  $(this).prev().removeClass('d-none');
+				  $('.faces-counter-container .thePosition').text(theIndex);
+			  }
+			  
+			  return false;
+		  }
+	  });
+  
+  });
 
   

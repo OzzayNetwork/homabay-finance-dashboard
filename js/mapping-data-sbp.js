@@ -114,26 +114,26 @@ function initMap() {
         anchor: new google.maps.Point(0, 0) // anchor
     }
 
-    //rented plate
+    //compliant business
     var rentedPlate = {
-        url: "images/map-assets/rented.svg", // url
+        url: "images/map-assets/compliant-business.svg", // url
         scaledSize: new google.maps.Size(45, 45), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     }
 
-    //multiple sided plate
+    //multiple businesses permits
 
     var multiPlate = {
-        url: "images/map-assets/multiple-plates.svg", // url
+        url: "images/map-assets/multiple-biz.svg", // url
         scaledSize: new google.maps.Size(45, 45), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     }
 
-    //available plate
+    //Almost expiring Business permit
     var availablePlate = {
-        url: "images/map-assets/available.svg", // url
+        url: "images/map-assets/near-expired-business.svg", // url
         scaledSize: new google.maps.Size(45, 45), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
@@ -141,7 +141,7 @@ function initMap() {
 
     //damaged plate
     var damagedPlate = {
-        url: "images/map-assets/damaged.svg", // url
+        url: "images/map-assets/expired-business.svg", // url
         scaledSize: new google.maps.Size(45, 45), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
@@ -267,52 +267,38 @@ function initMap() {
         iconImage: rentedPlate,
         content: `<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
             <span class="active-agent mr-2">
-            </span>1254THY<span></h6>
+            </span>Business ID: 123456<span></h6>
 
-            <div class="content-img-cont">
+            <div class="content-img-cont d-none">
             <img class="mb-3" src="images/billboard-ads/sample.jpg" alt=""> 
             </div>
            
-            <p></span><strong class="">21 of 74 Days</strong><span></h6></p>
+            <p></span><strong class="">21 of 365 Days</strong><span></h6></p>
             <div class="progress"> 
             <div class="progress-bar progress-bar-info" style="width: 21%" aria-valuenow="21" aria-valuemin="0" aria-valuemax="120"></div>
             </div>
 
-            <p class="mt-4"><strong>Large Billboard</strong></p>
-            <p class="">Rented since <strong>20Th Oct, 2020</strong></p>
-            <p>Rented to <strong>Njupe LTD</strong></p>
+            <p class="mt-4"><strong>Early Morning Springs Hotel</strong></p>
+            <p class="">Date Renewed <strong>20Th Oct, 2022</strong></p>
+            <p>Business Owner <strong>Mr Lex Odhiambo</strong></p>
             `
     });
 
-    //rented add plate
+    //multiple businesses
     addMarker({
         coords: { lat: -0.5604342100348233, lng: 34.45984764556554 },
         iconImage: multiPlate,
         content: `<p class="d-none">multi-plate|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="active-agent mr-2">
-            </span>1254THY<span></h6>
-            <p class="mb-4"><strong>Large Billboard</strong></p>
+            <span class="active-agent mr-2 d-none">
+            </span>Highrise Tower<span></h6>
+            <p class="mb-4"><strong>Storey Building</strong></p>
 
-            <p></span><strong class="">2 sides of 4 sides available</strong><span></h6></p>
+            <p></span><strong class="">5 Expired of 76 Businesses</strong><span></h6></p>
             <div class="progress"> 
             <div class="progress-bar progress-bar-info" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
 
-            <h5 class="text-primary mt-3"><strong>Renting details</strong></h5>
-           
-            <p class="mt-2 mb-2">Nouveta Ltd : 25th Nov, 2020 10:25PM - 25th Dec, 2020 10:25PM</p>
-
-            <p></span><strong>28 sides of 203 Days Remaining</strong><span></h6></p>
-            <div class="progress"> 
-            <div class="progress-bar progress-bar-info" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <hr>
-            <p>Kev & Co. Ltd : 28th Jan, 2020 09:23PM - 6Th Jan, 2020 12:00PM</p>
-            <p></span><strong>12 sides of 63 Days Remaining</strong><span></h6></p>
-            <div class="progress"> 
-            <div class="progress-bar progress-bar-info" style="width: 54%" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+            
 
             <hr>
 
@@ -327,38 +313,43 @@ function initMap() {
     //approved applications
     addMarker({
         coords: { lat:  -0.5406668966298305, lng: 34.46846861397245 },
-        iconImage: approved,
+        iconImage: rentedPlate,
         content: `<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="active-agent mr-2">
-            </span>Compliant<span></h6>
-            <div class="content-img-cont">
-            <img class="mb-3" src="images/billboard-ads/890.jpg" alt=""> 
-            </div>
-            <p></span><strong class="">75 of 120 Days</strong><span></h6></p>
-            <div class="progress"> 
-            <div class="progress-bar progress-bar-info" style="width: 71%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="120"></div>
-            </div>
+        <span class="active-agent mr-2">
+        </span>Business ID: 123456<span></h6>
 
-            <p class="mt-4"><strong>Large Billboard</strong></p>
-            <p class="">Approved on <strong>23rd Aug, 2020</strong></p>
-            <p>Owner <strong>Nouveta LTD</strong></p>
-           
-            `
+        <div class="content-img-cont d-none">
+        <img class="mb-3" src="images/billboard-ads/sample.jpg" alt=""> 
+        </div>
+       
+        <p></span><strong class="">21 of 365 Days</strong><span></h6></p>
+        <div class="progress"> 
+        <div class="progress-bar progress-bar-info" style="width: 21%" aria-valuenow="21" aria-valuemin="0" aria-valuemax="120"></div>
+        </div>
+
+        <p class="mt-4"><strong>Early Morning Springs Hotel</strong></p>
+        <p class="">Date Renewed <strong>20Th Oct, 2022</strong></p>
+        <p>Business Owner <strong>Mr Lex Odhiambo</strong></p>
+        `
     });
-
     //ongoing applications
     addMarker({
         coords: { lat: -0.5301610776428674, lng: 34.46174464233012 },
-        iconImage: ongoing,
+        iconImage: availablePlate,
         content: `<p class="d-none">application|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="unclump-car mr-2">
-            </span>Pending application<span></h6>
+            <span class="unclump-car mr-2 d-none">
+            </span>Business ID: 467890<span></h6>
 
-            <div class="content-img-cont">
+            <div class="content-img-cont d-none">
             <img class="mb-3" src="images/billboard-ads/blinks.jpg" alt=""> 
             </div>
+
+            <p></span><strong class="">21 of 365 Days</strong><span></h6></p>
+            <div class="progress"> 
+            <div class="progress-bar progress-bar-info" style="width: 21%" aria-valuenow="21" aria-valuemin="0" aria-valuemax="120"></div>
+            </div>
            
-           <p class="mt-4"><strong>Window Branding
+           <p class="mt-4"><strong>Queens Spot
             </strong></p>
             <p class="">Application Date <strong>23rd Aug, 2020</strong></p>
             <p>Applicant <strong>Nouveta LTD</strong></p>
@@ -396,21 +387,21 @@ function initMap() {
         coords: { lat: -0.597914094955173, lng: 34.48426327801944 },
         iconImage: rentedPlate,
         content: `<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="active-agent mr-2">
-            </span>WER456<span></h6>
+            <span class="active-agent mr-2 d-none">
+            </span>Business ID 786905<span></h6>
 
-            <div class="content-img-cont">
+            <div class="content-img-cont d-none">
             <img class="mb-3" src="images/billboard-ads/nouveta.jpg" alt=""> 
             </div>
            
-            <p></span><strong class="">75 of 120 Days</strong><span></h6></p>
+            <p></span><strong class="">75 of 365 Days</strong><span></h6></p>
             <div class="progress"> 
             <div class="progress-bar progress-bar-info" style="width: 71%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="120"></div>
             </div>
 
-            <p class="mt-4"><strong>Large Billboard</strong></p>
+            <p class="mt-4"><strong>360 Signal Pub</strong></p>
             <p class="">Rented since <strong>23rd Aug, 2020</strong></p>
-            <p>Rented to <strong>Nouveta LTD</strong></p>
+            <p>Business Owner <strong>Miss Fridah Akinyi</strong></p>
            
             `
     });
@@ -461,10 +452,10 @@ function initMap() {
         coords: { lat: -0.5626678577744075, lng: 34.446661422489704 },
         iconImage: damagedPlate,
         content: `<p class="d-none">plate|unique identifier</p>
-            <h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KGYHU789</span></h6>
-            <P class="mb-4"><strong>City Clock</strong></>
-            <p class="pb-0 mb-0">Date registered as damaged <strong>29th Jan 2020 </strong> at 2:06 PM </strong></p>
-            <p>Date last rented <strong>2nd Jan 2020</strong></p>
+            <h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent d-none"></span><span>Business ID 5665678</span></h6>
+            <P class="mb-4"><strong>Vata Energies</strong></>
+            <p class="pb-0 mb-0">Expired On <strong>29th Jan 2023 </strong> at 2:06 PM </strong></p>
+            <p>Last Renewed <strong>2nd Jan 2022</strong></p>
            
             
             `
@@ -475,16 +466,25 @@ function initMap() {
         
         coords: { lat: -0.5335792017826858,lng:  34.45590880815301},
         iconImage: availablePlate,
-        content: `<p class="d-none">plate-available|unique identifier</p>
-                <h6 class="text-uppercase d-flex align-items-center">
-                    <span class="unclump-car mr-2"></span> <span>PHTY4589</span>                   
-                </h6>
-                <p class="mb-4"><strong>Billboard</strong></p>
-                <p class="">Date last Rented <strong>26th Apr 2020 </strong></strong></p>
-               
-                <p>Last Rented to <strong>Gina and Co.</strong></p>
-                
-                `
+        content: `<p class="d-none">application|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+        <span class="unclump-car mr-2 d-none">
+        </span>Business ID: 467890<span></h6>
+
+        <div class="content-img-cont d-none">
+        <img class="mb-3" src="images/billboard-ads/blinks.jpg" alt=""> 
+        </div>
+
+        <p></span><strong class="">21 of 365 Days</strong><span></h6></p>
+        <div class="progress"> 
+        <div class="progress-bar progress-bar-info" style="width: 21%" aria-valuenow="21" aria-valuemin="0" aria-valuemax="120"></div>
+        </div>
+       
+       <p class="mt-4"><strong>Kali Enterprices
+        </strong></p>
+        <p class="">Application Date <strong>23rd Aug, 2020</strong></p>
+        <p>Applicant <strong>Nouveta LTD</strong></p>
+       
+        `
     });
 
     //incidents
@@ -505,16 +505,26 @@ function initMap() {
        
         coords: { lat:  -0.5255139990685842,  lng: 34.45755080520696 },
         iconImage: availablePlate,
-        content: `<p class="d-none">plate-available|unique identifier</p>
-            <h6  class="text-uppercase d-flex align-items-center">
-            <span class="unclump-car mr-2"></span> <span>PH524589</span>     
-            </h6>
-            <p class="mb-4"><strong>Billboard</strong></p>
+        content: `<p class="d-none">application|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+                <span class="unclump-car mr-2 d-none">
+                </span>Business ID: 467890<span></h6>
 
-            <p class="pb-0 mb-0">Date last rented <strong>26th Apr 2020 </strong></strong></p>
-            <p>Last rented to <strong>Gina and Co.</strong></p>
-            `
-    });
+                <div class="content-img-cont d-none">
+                <img class="mb-3" src="images/billboard-ads/blinks.jpg" alt=""> 
+                </div>
+
+                <p></span><strong class="">21 of 365 Days</strong><span></h6></p>
+                <div class="progress"> 
+                <div class="progress-bar progress-bar-info" style="width: 21%" aria-valuenow="21" aria-valuemin="0" aria-valuemax="120"></div>
+                </div>
+            
+            <p class="mt-4"><strong>Wafalme Complex
+                </strong></p>
+                <p class="">Application Date <strong>23rd Aug, 2020</strong></p>
+                <p>Applicant <strong>Nouveta LTD</strong></p>
+            
+                `
+        });
 
     //city hall
     addMarker({

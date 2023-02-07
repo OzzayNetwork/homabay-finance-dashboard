@@ -185,7 +185,7 @@ $(window).on('load', function(){
 	
 //	datatable navigation styling
 	$('.nav-link').on('click', function(){
-		event.preventDefault();
+		// event.preventDefault();
 		$(this).addClass('active').parent().siblings().children('.nav-link').removeClass('active');
 	});
 

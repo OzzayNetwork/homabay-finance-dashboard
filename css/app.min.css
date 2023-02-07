@@ -14961,4 +14961,11 @@ input:invalid {
     border: red solid 3px;
   }
 
+  .main-map-container{
+    height: calc(100vh - 70px) !important;
+  }
+  .map-card-parking,.map-key-card-parking{
+    left: 280px !important;
+  }
+
 

@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:03 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel='icon' href='demo/img/logo-files/fav-icon.png' type='image/x-icon' />
+    <title>Finance Dashboard | County Government of Homa Bay</title>
+
+
+
+    <!-- icon fonts -->
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="css/flaticon-font/flaticon.css">
+
+    <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+    <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
+    <link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+    <link rel="stylesheet" href="vendors/dropzone/dropzone.css">
+    <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="vendors/trumbowyg/ui/trumbowyg.min.css">
+    <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
+    <link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+
+</head>
+
+<body data-ma-theme="green">
+    <main class="main">
+        <div class="page-loader">
+            <div class="page-loader__spinner">
+                <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+            </div>
+            <span class="powerd-container d-none">
+					<img src="demo/img/logo-files/revenue-sure.png">
+					<strong>A product of Trive</strong>
+				</span>
+        </div>
+
+        <header class="header">
+            <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
+                <div class="navigation-trigger__inner">
+                    <i class="navigation-trigger__line"></i>
+                    <i class="navigation-trigger__line"></i>
+                    <i class="navigation-trigger__line"></i>
+                </div>
+            </div>
+            <div class="header__logo hidden-sm-down">
+					<a href="index.html"><img class="the-logo" src="demo/img/logo-files/fav-icon.png"></a>
+					<h1>
+                        <a href="index.html" class="mb-3">Finance Dashboard</a>
+                        <p class="mb-0 text-white font-weight-light text-capitalize font-12px">County Government of Homa bay</p>
+                    </h1>
+                </div>
+            <form class="search">
+                <div class="search__inner">
+                    <input type="text" class="search__text" placeholder="Search site">
+                    <i class="zmdi zmdi-search search__helper" data-ma-action="search-close"></i>
+                </div>
+            </form>
+
+            <ul class="top-nav">
+                <li class="hidden-xl-up"><a href="#" data-ma-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
+
+                <li data-toggle="tooltip" data-original-title="Time logged in" class=" top-nav__notifications p-0 m-0">
+                    <a href="#" data-toggle="dropdown" class="top-nav__notify min-width-15px">
+                        <i class="zmdi zmdi-time"></i>
+                    </a>
+
+                </li>
+
+                <li data-toggle="tooltip" data-original-title="Time logged in " class="">
+                    <a href="#" data-toggle="dropdown" class="">
+                            3 min
+                        </a>
+
+                </li>
+
+                <li class="ml-5">
+                    <a href="new-parent.html" data-toggle="tooltip" data-original-title="Tasks completed">
+                        <i class="flaticon-pulse"></i><span class="mx-3">22</span>
+                    </a>
+                </li>
+            </ul>
+
+
+        </header>
+
+
+        <aside class="sidebar">
+            <div class="scrollbar-inner">
+                <div class="user">
+                    <div class="user__info" data-toggle="dropdown">
+                       <div class="avatar-char bg-warning text-black mr-3 font-weight-bold">JM</div>
+                        <div>
+                            <div class="user__name">John Mwakili</div>
+                            <div class="user__email">john@gmail.com</div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="my-profile.html">View Profile</a>
+                        <a class="dropdown-item d-none" href="#">Settings</a>
+                        <a class="dropdown-item" href="landing-page.html">Logout</a>
+                    </div>
+                </div>
+
+                <ul class="navigation">
+                    <li class="navigation__active"><a href="index.html"><i class="flaticon-graphic"></i>Dashboard</a></li>
+                    <li class="navigation__active"><a href="daily-summary.html"><i class="flaticon-calendar"></i>Daily Reports</a></li>
+                    <li class="navigation__active"><a href="monthly-summary.html"><i class="flaticon-calendar-2"></i>Monthly Reports</a></li>
+                    <li class="navigation__active"><a href="sbp-map.html"><i class="zmdi zmdi-hc-fw zmdi-pin"></i>Revenue Live Map</a></li>
+                    
+                    
+                     <li class="navigation__active"><a href="change-pass.html"><i class="flaticon-password"></i>Change password</a></li>
+                     <li class="navigation__active mt-4"><a href="landing-page.html"><i class="zmdi zmdi-power"></i>Logout</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Modals -->
+        <div class="modal modal-sm fade" id="add-category-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Add Advert Category</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Enter name of the advert category you wish to add below</p>
+                        <br>
+                        <form class="with-mpesa animated fade-in">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            <strong>Category Name</strong>  <strong class="text-danger">*</strong>
+                                            <p class="d-none"><small>Category Name</small></p>
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Category name" required>
+                                        <br>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Dismiss</button>
+                        <button type="button" class="btn btn-success btn--icon-text"> <i class="zmdi zmdi-check" ></i>Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modals -->
+
+        <section class="content main-map-container pt-68px pr-0 pl-270px vh-100 pl-md-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Parking Overview</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="sbp-map.html">SBP </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="adverts-map.html">Adverts </a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="parking-map.html">Parking <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item d-none">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            <div class="ma-backdrop d-none"></div>
+            <div class="map-asides">
+
+                <!-- new map marker function  -->
+                <aside class="map-info-cont animated slideInLeft left-100" id="newPoint">
+
+                    <!-- show this when loading the new data -->
+                    <div class="map-loader d-none">
+                        <div class="lds-ripple">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="map-cont-header">
+                        <h2 class="chat__title">New point of interest<small>Use this section to add a new point of interest on the map</small></h2>
+                        <i class="zmdi zmdi-close close-aside"></i>
+                    </div>
+
+
+
+                    <div class="map-cont-footer">
+
+
+                    </div>
+                    <div class="scroll-wrapper scrollbar-inner">
+
+
+
+                        <div class="listview">
+                            <form class="">
+                                <div class="listview__item ">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="selected-point-details p-3">
+                                                <h6>Point Details</h6>
+
+                                                <p class="mb-0"><strong>Sub County</strong></p>
+                                                <p class="clicked-subcounty">Starehe</p>
+
+                                                <p class="mb-0"><strong>Ward</strong></p>
+                                                <p class="clicked-ward">Ward name</p>
+
+                                                <p class="mb-0"><strong>Street</strong></p>
+                                                <p class="clicked-street">Tom Mboya street</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="mb-0" for="locationName"><strong>Location's Name</strong></label>
+                                                <p> <small>Enter the name to the new location</small></p>
+                                                <input type="text" class="form-control" id="locationName" placeholder="Point's Name" autofocus>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="locationCategory" class="mb-0"><strong>Select Point Category</strong></label>
+                                                <p><small>Select the category for with this location belongs.</small></p>
+                                                <select class="form-control" id="locationCategory">
+                                            <option>-- Select location category --</option>
+                                          <option>Parking street</option>
+                                          <option>Off street parking location</option>
+                                          <option>Revenue/service point</option>
+                                          <option>Bus park</option>
+                                        </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button class="btn btn-primary">Add Location</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </form>
+
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+                <!-- map info content for service and revenue  -->
+                <aside class="map-info-cont animated slideInLeft left-100" id="collectionPoint-info">
+
+                    <!-- show this when loading the new data -->
+                    <div class="map-loader d-none">
+                        <div class="lds-ripple">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="map-cont-header">
+                        <h2 class="chat__title">City Hall<small>Service/collection pont</small></h2>
+                        <i class="zmdi zmdi-close close-aside"></i>
+                    </div>
+                    <div class="map-cont-footer">
+
+
+                    </div>
+                    <div class="scroll-wrapper scrollbar-inner">
+
+                        <!-- incident image -->
+                        <div class="map-cont-img">
+                            <img src="images/non_compliant.jpeg">
+                        </div>
+
+                        <div class="listview">
+                            <div class="listview__item ">
+                                <div class="listview__content">
+                                    <div class="listview__heading text-uppercase font-weight-bold font-12px">Revenue collected today</div>
+                                    <h4 class="font-weight-bolder mb-0">KES 25,236,000</h4>
+                                </div>
+                            </div>
+
+                            <div class="listview__item ">
+                                <div class="listview__content">
+                                    <div class="listview__heading text-uppercase font-weight-bold font-12px">Clients Served</div>
+                                    <h4 class="font-weight-bolder mb-0">30</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="ti-money"></i><span>Collection Summary</span></div>
+                            </div>
+
+                        </div>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <td><strong>Service</strong></td>
+                                    <td><strong>Amount (kes)</strong></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td><strong>Seasonal</strong></td>
+                                    <td class="text-left text-wrap">
+                                        23,650,000
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Daily parking</strong></td>
+                                    <td class="text-left text-wrap">
+                                        360,200
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Penalties</strong></td>
+                                    <td class="text-left text-wrap">
+                                        360,200
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Others</strong></td>
+                                    <td class="text-left text-wrap">
+                                        325,520
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+
+                    </div>
+
+                </aside>
+
+                <!-- map info content for incident reporting -->
+                <aside class="map-info-cont animated slideInLeft left-100" id="incident-info">
+
+                    <!-- show this when loading the new data -->
+                    <div class="map-loader d-none">
+                        <div class="lds-ripple">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="map-cont-header">
+                        <h2 class="chat__title">Incident title<small>30 Min Ago</small></h2>
+                        <i class="zmdi zmdi-close close-aside"></i>
+                    </div>
+                    <div class="map-cont-footer">
+
+
+                    </div>
+                    <div class="scroll-wrapper scrollbar-inner">
+
+                        <!-- incident image -->
+                        <div class="map-cont-img">
+                            <img src="images/non_compliant.jpeg">
+                        </div>
+
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="ti-alert"></i><span>Incident details</span></div>
+                            </div>
+
+                        </div>
+
+                        <div class="listview">
+                            <div class="listview__item">
+                                <div class="listview__content">
+                                    <div class="listview__heading">Reported By</div>
+                                    <p>Mr Kinothia Wanyoike</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview">
+                            <div class="listview__item">
+                                <div class="listview__content">
+                                    <div class="listview__heading">Incident status</div>
+                                    <p>Pending</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </aside>
+
+                <!-- map info content for offstreet parking -->
+                <aside class="map-info-cont animated slideInLeft left-100" id="offstreet-info">
+
+                    <!-- show this when loading the new data -->
+                    <div class="map-loader d-none">
+                        <div class="lds-ripple">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="map-cont-header">
+                        <h2 class="chat__title">Bus Park<small>Off-street parking</small></h2>
+                        <i class="zmdi zmdi-close close-aside"></i>
+                    </div>
+                    <div class="map-cont-footer">
+                        <div class="map-cont-img">
+                            <img src="images/non_compliant.jpeg">
+                        </div>
+
+                    </div>
+                    <div class="scroll-wrapper scrollbar-inner">
+                        <div class="listview">
+                            <div class="listview__item ">
+                                <div class="listview__content">
+                                    <div class="listview__heading text-uppercase font-weight-bold font-12px">Revenue collected today</div>
+                                    <h4 class="font-weight-bolder mb-0">KES 25,236,000</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-parking"></i><span>Vehicles Parking Statistics</span></div>
+                            </div>
+
+                        </div>
+
+                        <div class="listview">
+                            <div class="listview__item py-2">
+                                <div class="row w-100">
+
+                                    <div class="col-6">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">Checked In</div>
+                                        <h4 class="font-weight-bolder">102</h4>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">Checked Out</div>
+                                        <h4 class="font-weight-bolder">22</h4>
+                                    </div>
+
+                                    <div class="col-6 pb-2">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">on site</div>
+                                        <h4 class="font-weight-bolder">125</h4>
+                                    </div>
+                                    <div class="col-6 pb-2">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">AVG PARKING TIME</div>
+                                        <h4 class="font-weight-bolder">4 Hrs</h4>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-phone"></i><span>Enforcement Gadgets</span></div>
+                            </div>
+
+                        </div>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td><span>Assigned</span><span class="text-info">124</span></td>
+                                    <td><span>Active</span><span class="">124</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Inactive</span><span class="text-danger">124</span></td>
+                                    <td><span>Damaged</span><span class="">124</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </aside>
+
+                <!-- map info content for agents -->
+                <aside class="map-info-cont animated slideInLeft left-100" id="agents-info">
+
+                    <!-- show this when loading the new data -->
+                    <div class="map-loader d-none">
+                        <div class="lds-ripple">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="map-cont-header">
+
+                        <!-- //use class name active-agent for an active agent -->
+                        <h2 class="chat__title">
+                            <span class="d-flex align-items-center"><span class="offline-agent mr-3"></span>Alex Wanjala Wafula</span>
+                            <small>Man Number goes here</small>
+                        </h2>
+                        <i class="zmdi zmdi-close close-aside"></i>
+                    </div>
+
+                    <div class="scroll-wrapper scrollbar-inner">
+                        <div class="map-cont-footer">
+                            <div class="map-cont-img">
+
+                                <!-- his picture goes here if any -->
+                                <img src="images/non_compliant.jpeg">
+                            </div>
+
+                        </div>
+
+                        <div href="#" class="listview__item">
+                            <div class="listview__content">
+                                <div class="listview__heading mb-2"><strong>25MB of 1GB remaining</strong></div>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-smartphone"></i><span>Enforcement Summary</span></div>
+                            </div>
+
+                        </div>
+
+                        <div class="listview">
+                            <div class="listview__item py-2">
+                                <div class="row w-100">
+
+                                    <div class="col-5">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">queries</div>
+                                        <h4 class="font-weight-bolder">102</h4>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">Clamped</div>
+                                        <h4 class="font-weight-bolder">22</h4>
+                                    </div>
+
+                                    <div class="col-5 pb-2">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">Unclamped</div>
+                                        <h4 class="font-weight-bolder">125</h4>
+                                    </div>
+                                    <div class="col-7 pb-2">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">Distance covered</div>
+                                        <h4 class="font-weight-bolder">22 m</h4>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><span>Contact information</span></div>
+                            </div>
+
+                        </div>
+                        <div class="widget-profile__list text-black">
+                            <div class="media">
+                                <div class="avatar-char"><i class="zmdi zmdi-phone"></i></div>
+                                <div class="media-body">
+                                    <strong><a href="tell:254704549859">0704549859</a></strong>
+                                    <small>Phone</small>
+                                </div>
+                            </div>
+
+                            <div class="media">
+                                <div class="avatar-char"><i class="zmdi zmdi-email"></i></div>
+                                <div class="media-body">
+                                    <strong>m-hollaway@gmail.com</strong>
+                                    <small>Email</small>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </aside>
+
+                <!-- map info content for street parking -->
+                <aside class="map-info-cont animated slideInLeft left-100" id="street-info">
+
+                    <!-- show this when loading the new data -->
+                    <div class="map-loader d-none">
+                        <div class="lds-ripple">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="map-cont-header">
+                        <h2 class="chat__title">Tom Mboya street <small>Daily Parking</small></h2>
+                        <i class="zmdi zmdi-close close-aside"></i>
+                    </div>
+
+                    <div class="scroll-wrapper scrollbar-inner">
+
+                        <!-- street image if any -->
+                        <div class="map-cont-img">
+                            <img src="images/non_compliant.jpeg">
+                        </div>
+                        <div class="listview">
+                            <div class="listview__item ">
+                                <div class="listview__content">
+                                    <div class="listview__heading text-uppercase font-weight-bold font-12px">Revenue collected today</div>
+                                    <h4 class="font-weight-bolder mb-0">KES 25,236,000</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-car-1"></i><span>Parking slots summary</span></div>
+                            </div>
+
+                        </div>
+
+                        <div class="listview">
+                            <div class="listview__item py-2">
+                                <div class="row w-100">
+
+                                    <div class="col-6">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">Total slots</div>
+                                        <h4 class="font-weight-bolder">102</h4>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">Occupied</div>
+                                        <h4 class="font-weight-bolder">22</h4>
+                                    </div>
+
+                                    <div class="col-6 pb-2">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">Available</div>
+                                        <h4 class="font-weight-bolder">125</h4>
+                                    </div>
+                                    <div class="col-6 pb-2">
+                                        <div class="listview__heading text-uppercase font-weight-bold font-10px">cars checked in</div>
+                                        <h4 class="font-weight-bolder">132</h4>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-smartphone"></i><span>Enforcement summary</span></div>
+                            </div>
+
+                        </div>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td><span>Queries</span><span class="text-info">1124</span></td>
+                                    <td><span>Not queried</span><span class="">124</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span>Compliant</span><span class="text-danger">124</span></td>
+                                    <td><span>Uncompliant</span><span class="">124</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span>Clamped</span><span class="text-danger">124</span></td>
+                                    <td><span>Due clamping</span><span class="">124</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>To be unclamped</span><span class="text-danger">124</span></td>
+                                    <td><span>to be toed</span><span class="">124</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                    <div class="map-cont-footer">
+                    </div>
+                </aside>
+
+                <!-- vehicle details -->
+                <aside class="map-info-cont animated slideInLeft left-100" id="car-info">
+
+                    <!-- show this when loading the new data -->
+                    <div class="map-loader d-none">
+                        <div class="lds-ripple">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="map-cont-header">
+                        <h2 class="chat__title">KAD 567Y <small>Car category</small></h2>
+                        <i class="zmdi zmdi-close close-aside"></i>
+                    </div>
+
+                    <div class="scroll-wrapper scrollbar-inner">
+
+                        <!-- street image if any -->
+                        <div class="map-cont-img">
+                            <img src="images/non_compliant.jpeg">
+                        </div>
+                        <div class="listview">
+                            <div class="listview__item ">
+                                <div class="listview__content">
+                                    <div class="listview__heading text-uppercase font-weight-bold font-12px">Total amount paid</div>
+                                    <h4 class="font-weight-bolder mb-0">KES 200</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-car-1"></i><span>Current parking status</span></div>
+                            </div>
+
+                        </div>
+
+                        <div class="listview">
+                            <div class="listview__item py-2">
+                                <strong class="text-success">Compliant</strong>
+                            </div>
+
+                        </div>
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-smartphone"></i><span>Parking statuses timelines</span></div>
+                            </div>
+
+                        </div>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <td><strong>Time:</strong></td>
+                                    <td><strong>Details</strong></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td><strong>8:00 AM</strong></td>
+                                    <td class="text-left text-wrap">
+                                        The vehicle was queried and was found to be non compliant
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>8:45 AM</strong></td>
+                                    <td class="text-left text-wrap">
+                                        The vehicle was clamped by Mr Miheso
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>9:00 AM</strong></td>
+                                    <td class="text-left text-wrap">
+                                        The owner paid for the parking penalty
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>9:02 AM</strong></td>
+                                    <td class="text-left text-wrap">
+                                        The car was unclaped by Ms Jane.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                    <div class="map-cont-footer">
+                    </div>
+                </aside>
+            </div>
+
+
+            <div class="map-key-card card map-key-card-parking">
+                <div class="card-body">
+                    <i class="zmdi zmdi-hc-fw"></i>
+                </div>
+            </div>
+            <div class="card map-card map-card-parking animated slideInLeft">
+                <span class="close-map-key"><i class="zmdi zmdi-close"></i></span>
+                <div class="card-body">
+                    <h4 class="card-title">Map Key</h4>
+
+                </div>
+                <div class="listview py-4 map-key">
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/compliant-a.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>Compliant Cars</strong></div>                        
+                    </div>
+                </span>
+
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/tobe-clamped-a.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>To be clamped</strong></div>                        
+                    </div>
+                </span>
+
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/clamped-a.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>Clamped</strong></div>                        
+                    </div>
+                </span>
+
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/to-unclamp.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>To Unclamp</strong></div>                        
+                    </div>
+                </span>
+
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/warning.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>Incidents</strong></div>                        
+                    </div>
+                </span>
+
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/active-agent.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>active-agent</strong></div>                        
+                    </div>
+                </span>
+
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/inactive-agent.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>Inactive agents</strong></div>                        
+                    </div>
+                </span>
+
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/parliament.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>City Hall</strong></div>                        
+                    </div>
+                </span>
+
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/Offstreet.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>Street</strong></div>                        
+                    </div>
+                </span>
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/flag.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>Service/Collection Point</strong></div>                        
+                    </div>
+                </span>
+
+                    <span class="listview__item py-0">
+                    <img src="images/map-assets/street-parking.svg" class="listview__img" alt="">
+
+                    <div class="listview__content d-flex align-items-center">
+                        <div class="listview__heading"><strong>Off Street</strong></div>                        
+                    </div>
+                </span>
+
+                </div>
+            </div>
+            <div id="map" class="h-100 w-100 mt-1"></div>
+        </section>
+    </main>
+
+    <!-- Older IE warning message -->
+    <!--[if IE]>
+                <div class="ie-warning">
+                    <h1>Warning!!</h1>
+                    <p>You are using an outdated version of Internet Explorer, please upgrade to any of the following web browsers to access this website.</p>
+
+                    <div class="ie-warning__downloads">
+                        <a href="http://www.google.com/chrome">
+                            <img src="img/browsers/chrome.png" alt="">
+                        </a>
+
+                        <a href="https://www.mozilla.org/en-US/firefox/new">
+                            <img src="img/browsers/firefox.png" alt="">
+                        </a>
+
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                        </a>
+
+                        <a href="https://support.apple.com/downloads/safari">
+                            <img src="img/browsers/safari.png" alt="">
+                        </a>
+
+                        <a href="https://www.microsoft.com/en-us/windows/microsoft-edge">
+                            <img src="img/browsers/edge.png" alt="">
+                        </a>
+
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                        </a>
+                    </div>
+                    <p>Sorry for the inconvenience!</p>
+                </div>
+            <![endif]-->
+
+    <!-- Javascript -->
+    <!-- Vendors -->
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/popper.js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+    <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+
+    <script src="vendors/flot/jquery.flot.js"></script>
+    <script src="vendors/flot/jquery.flot.resize.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
+    <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="vendors/salvattore/salvattore.min.js"></script>
+    <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
+    <script src="vendors/moment/moment.min.js"></script>
+    <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+
+    <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
+    <script src="vendors/select2/js/select2.full.min.js"></script>
+    <script src="vendors/dropzone/dropzone.min.js"></script>
+    <script src="vendors/moment/moment.min.js"></script>
+    <script src="vendors/nouislider/nouislider.min.js"></script>
+    <script src="vendors/trumbowyg/trumbowyg.min.js"></script>
+    <script src="vendors/flatpickr/flatpickr.min.js"></script>
+    <script src="vendors/rateyo/jquery.rateyo.min.js"></script>
+    <script src="vendors/jquery-text-counter/textcounter.min.js"></script>
+    <script src="vendors/autosize/autosize.min.js"></script>
+    <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+
+    <!-- Vendors: Data tables -->
+    <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+    <script src="vendors/jszip/jszip.min.js"></script>
+    <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
+
+    <!-- Charts and maps-->
+    <script src="demo/js/flot-charts/curved-line.js"></script>
+    <script src="demo/js/flot-charts/dynamic.js"></script>
+    <script src="demo/js/flot-charts/line.js"></script>
+    <script src="demo/js/flot-charts/chart-tooltips.js"></script>
+    <script src="demo/js/other-charts.js"></script>
+    <script src="demo/js/jqvmap.js"></script>
+
+    <!--high chart-->
+
+    <script src="vendors/highcharts/highchart.js"></script>
+    <script src="vendors/highcharts/data.js"></script>
+    <script src="vendors/highcharts/drilldown.js"></script>
+    <script src="vendors/highcharts/exporting.js"></script>
+    <script src="vendors/highcharts/export-data.js"></script>
+    <script src="vendors/highcharts/accesibility.js"></script>
+
+    <script src="js/highcharts/highcharts-more.js"></script>
+    <!--owl corousel-->
+    <script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
+    <!-- App functions and actions -->
+    <script src="js/wow.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mapping-parking.js"></script>
+
+    <!-- axios to be used for geocoding -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8&callback=initMap">
+    </script>
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8&callback=initMap&libraries=places&v=weekly" defer>
+    </script>
+
+</body>
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
+
+</html>

@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
-		<link rel='icon' href='demo/img/icon_3.png' type='image/x-icon'/ >
+		<link rel='icon' href='demo/img/icon_3.png' type='image/x-icon'/>
 		<title>Finance Dashboard | County Government of Homa Bay</title>
 
 		<!--icon files-->
@@ -32,6 +32,8 @@
         <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
         <link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
         <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 
         <!-- App styles -->
         <link rel="stylesheet" href="css/app.min.css">
@@ -338,13 +340,13 @@
 				 	<div class="row">
 						<div class="col-md-12 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Daily Summary report</h1>
+							 <h1 class="text-capitalize stream_name m-0">Monthly Summary report</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
 									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
 									<li class="breadcrumb-item"><a href="#">Summary Report</a></li>
-									<li class="breadcrumb-item active">Daily Summary report</li>
+									<li class="breadcrumb-item active">Monthly Summary report</li>
 								</ol>
 							</div>
 						</div>
@@ -358,13 +360,21 @@
 							<div class="card-body">
 								<div class="row pb-5">
 									<div class="col-lg-12">
-										<h4 class="card-title">Summary report for <strong class="date-range-text text-primary">Today</strong></h4>
-										<p><strong>NOTE</strong> to select a single date, kindly <strong>double click</strong> on the same date</p>
+										<h4 class="card-title">Summary report for <strong class="monthly-range-text text-primary">February 2023</strong></h4>
+										<p class="d-none"><strong>NOTE</strong> to select a single date, kindly <strong>double click</strong> on the same date</p>
 										<div class="ranger-container">
-											<i class="icon-calendar-7"></i>
-											<input type="text" class="form-control date-range  table-ranger" id="date_ranger" placeholder="Select a date or date range" readonly="readonly"  onChange=" Expand(obj)" >
+											<select class="selectpicker form-select show-tick month-picker" data-live-search="true"  data-style="btn-primary" title="Select Month">
+                                                <option selected value="Feb 2023">Feb 2023</option>
+                                                <option value="Jan 2023">Jan 2023</option>
+                                                <option value="Dec 2022">Dec 2022</option>
+
+                                                <option value="Nov 2022">Nov 2022</option>
+                                                <option value="Sep 2022">Sep 2022</option>
+                                                <option value="Oct 2022">Oct 2022</option>
+                                              </select>
+                                              
 										</div>
-										<hr class="the-line">
+										<hr class="the-line d-none">
 										
 									</div>
 									
@@ -382,7 +392,7 @@
 										<tfoot class="dark-footer">
 											<tr class="text-uppercase"> 
 												<th colspan="2"><strong>Subtotal</strong></th>												
-												<th>KES 203,362,230</th>
+												<th>KES 268,597,171</th>
 											</tr>
 										</tfoot>
 										
@@ -390,61 +400,61 @@
 											<tr>
 												<td>1</td>
 												<td>Cess</td>
-												<td>8,444,300</td>
+												<td>84,678,300</td>
 											</tr>
 											
 											<tr>
 												<td>2</td>
 												<td>Billboards and Advertisements</td>
-												<td>2,490,006</td>
+												<td>32,980,004</td>
 											</tr>
 											
 											<tr>
 												<td>3</td>
 												<td>Market Fees</td>
-												<td>1,005,055</td>
+												<td>31,003,335</td>
 											</tr>
 											
 											<tr>
 												<td>4</td>
 												<td>Single Business Permits</td>
-												<td>1,005,055</td>
+												<td>31,000,055</td>
 											</tr>
 											
 											<tr>
 												<td>5</td>
 												<td>Land Rates</td>
-												<td>862,775</td>
+												<td>19,456,097</td>
 											</tr>
 
                                             <tr>
 												<td>6</td>
 												<td>Plans and Inspections</td>
-												<td>782,525</td>
+												<td>18,782,894</td>
 											</tr>
 
                                             <tr>
 												<td>7</td>
 												<td>Fire Inspection Certificate</td>
-												<td>295,000</td>
+												<td>18,567,009</td>
 											</tr>
 
                                             <tr>
 												<td>8</td>
 												<td>House and stall rents</td>
-												<td>86,150</td>
+												<td>15,986,150</td>
 											</tr>
 
                                             <tr>
 												<td>9</td>
 												<td>Parking</td>
-												<td>76,770</td>
+												<td>9,076,767</td>
 											</tr>
 
                                             <tr>
 												<td>10</td>
 												<td>Markets</td>
-												<td>66,150</td>
+												<td>7,066,560</td>
 											</tr>
 										</tbody>
 									</table>
@@ -502,6 +512,8 @@
         <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
         <script src="vendors/flot/jquery.flot.js"></script>
         <script src="vendors/flot/jquery.flot.resize.js"></script>
         <script src="vendors/flot.curvedlines/curvedLines.js"></script>
@@ -556,7 +568,8 @@
 		<!-- App functions and actions -->
 		<script src="js/wow.js"></script>
         <script src="js/app.min.js"></script>
-        <script src="js/main.js"></script>		
+        <script src="js/main.js"></script>
+        	
     </body>
 
 <!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->

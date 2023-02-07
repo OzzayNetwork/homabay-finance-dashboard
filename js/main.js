@@ -218,6 +218,14 @@ $(window).on('load', function(){
 	
 });
 
+$(document).ready(function(){
+	$('.selectpicker').selectpicker();
+	$('.month-picker').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {
+		$('.monthly-range-text').text($(this).children("option:selected").val())
+	  });
+	  
+})
+
 
 //owl initializer
 $(document).ready(function(){
